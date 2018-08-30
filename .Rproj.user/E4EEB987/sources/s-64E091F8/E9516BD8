@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3050980096",
     "id" : "E9516BD8",
-    "lastKnownWriteTime" : 1535625416,
-    "last_content_update" : 1535625416,
+    "lastKnownWriteTime" : 1535629171,
+    "last_content_update" : 1535629171242,
     "path" : "~/GitHub/jr-packages/jrSpatial/DESCRIPTION",
     "project_path" : "DESCRIPTION",
     "properties" : {
-        "cursorPosition" : "14,10",
-        "scrollLine" : "3"
+        "cursorPosition" : "12,14",
+        "scrollLine" : "1"
     },
     "read_only" : false,
     "read_only_alternatives" : [

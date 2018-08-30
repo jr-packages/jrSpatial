@@ -1,0 +1,16 @@
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [K]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git in it
+Initialised empty Git repository in /home/theo/GitHub/jr-packages/jrSpatial/.git/
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git co mmit -m "fi[K[Kintial commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+	[31m.Rbuildignore[m
+	[31m.Rproj.user/[m
+	[31mDESCRIPTION[m
+	[31mNAMESPACE[m
+	[31mjrSpatial.Rproj[m
+
+nothing added to commit but untracked files present
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git ad d . 

@@ -14,3 +14,77 @@ Untracked files:
 
 nothing added to commit but untracked files present
 ]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git ad d . 
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git co mm[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kgit addd . [A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Ccommit -m "intial commit"
+[master (root-commit) 7d52700] intial commit
+ 24 files changed, 335 insertions(+)
+ create mode 100644 .Rbuildignore
+ create mode 100644 .Rproj.user/E4EEB987/console06/73D802E8
+ create mode 100644 .Rproj.user/E4EEB987/console06/73D802E8.env
+ create mode 100644 .Rproj.user/E4EEB987/console06/INDEX001
+ create mode 100644 .Rproj.user/E4EEB987/sources/prop/3332F190
+ create mode 100644 .Rproj.user/E4EEB987/sources/prop/34119981
+ create mode 100644 .Rproj.user/E4EEB987/sources/prop/355E0971
+ create mode 100644 .Rproj.user/E4EEB987/sources/prop/7A138CB2
+ create mode 100644 .Rproj.user/E4EEB987/sources/prop/EE319F38
+ create mode 100644 .Rproj.user/E4EEB987/sources/prop/INDEX
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/8F21856A
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/8F21856A-contents
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/AFD6942E
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/AFD6942E-contents
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/C32EF7D1-contents
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/E5D7A992-contents
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/E9516BD8
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/E9516BD8-contents
+ create mode 100644 .Rproj.user/E4EEB987/sources/s-64E091F8/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 DESCRIPTION
+ create mode 100644 NAMESPACE
+ create mode 100644 jrSpatial.Rproj
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git remmote add origin git@github.com:jr-packages/jrSpatial.git
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git pu sh -u orgin[K[K[Kigin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git pussh -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git remmote add origin https://github.com/jr-packages/jrSpatial.git
+fatal: remote origin already exists.
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git re mote set-url https://github.com/jr-packages/jrSpatial.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [K]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git remmote set-url https://github.com/jr-packages/jrSpatial.gitohttps://github.com/jr-packages/jrSpatial.git[C[C[C[C[C[C[C[C[C[C[C[C[C[Crhttps://github.com/jr-packages/jrSpatial.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cihttps://github.com/jr-packages/jrSpatial.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cghttps://github.com/jr-packages/jrSpatial.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cihttps://github.com/jr-packages/jrSpatial.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnhttps://github.com/jr-packages/jrSpatial.gitt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cahttps://github.com/jr-packages/jrSpatial.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/jr-packages/jrSpatial.git[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C https://github.com/jr-packages/jrSpatial.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git remmote set-url origin https://github.com/jr-packages/jrSpatial.giit[A[C[C[C[C[C[C[C[C[C[C[C[5Phttps://github.com/jr-packages/jrSpatial.git
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@add origin[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Apush -u origin master[K[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cremote add origin git@github.com:jr-packages/jrSpatial.git[A[C[C[C[Cpush -u origin master[K
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': theoroe3
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://theoroe3@github.com': 
+Counting objects: 31, done.
+Delta compression using up to 8 threads.
+Compressing objects:   4% (1/25)   Compressing objects:   8% (2/25)   Compressing objects:  12% (3/25)   Compressing objects:  16% (4/25)   Compressing objects:  20% (5/25)   Compressing objects:  24% (6/25)   Compressing objects:  28% (7/25)   Compressing objects:  32% (8/25)   Compressing objects:  36% (9/25)   Compressing objects:  40% (10/25)   Compressing objects:  44% (11/25)   Compressing objects:  48% (12/25)   Compressing objects:  52% (13/25)   Compressing objects:  56% (14/25)   Compressing objects:  60% (15/25)   Compressing objects:  64% (16/25)   Compressing objects:  68% (17/25)   Compressing objects:  72% (18/25)   Compressing objects:  76% (19/25)   Compressing objects:  80% (20/25)   Compressing objects:  84% (21/25)   Compressing objects:  88% (22/25)   Compressing objects:  92% (23/25)   Compressing objects:  96% (24/25)   Compressing objects: 100% (25/25)   Compressing objects: 100% (25/25), done.
+Writing objects:   3% (1/31)   Writing objects:   6% (2/31)   Writing objects:   9% (3/31)   Writing objects:  12% (4/31)   Writing objects:  16% (5/31)   Writing objects:  19% (6/31)   Writing objects:  22% (7/31)   Writing objects:  25% (8/31)   Writing objects:  29% (9/31)   Writing objects:  32% (10/31)   Writing objects:  35% (11/31)   Writing objects:  38% (12/31)   Writing objects:  41% (13/31)   Writing objects:  45% (14/31)   Writing objects:  48% (15/31)   Writing objects:  51% (16/31)   Writing objects:  54% (17/31)   Writing objects:  61% (19/31)   Writing objects:  64% (20/31)   Writing objects:  67% (21/31)   Writing objects:  70% (22/31)   Writing objects:  74% (23/31)   Writing objects:  77% (24/31)   Writing objects:  80% (25/31)   Writing objects:  83% (26/31)   Writing objects:  87% (27/31)   Writing objects:  90% (28/31)   Writing objects:  93% (29/31)   Writing objects:  96% (30/31)   Writing objects: 100% (31/31)   Writing objects: 100% (31/31), 6.31 KiB | 718.00 KiB/s, done.
+Total 31 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), done.[K
+To https://github.com/jr-packages/jrSpatial.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ cp ../ jrTidyverse/.travis.yml .
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git ad d[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K-a  -[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcm [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kco mmit -a -m ""a"d"d"i"n"g" "t"r"a"v"i"s" "a"n"d" "d"e"p"e"n"d"e"n"c"i"e"s"

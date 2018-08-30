@@ -159,3 +159,20 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git ad d . 
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ go[Kt[K[Kgit co mmit -m "fixing travis"
+[master 4a6beeb] fixing travis
+ 5 files changed, 36 insertions(+), 8 deletions(-)
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git pu sh 
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': theoroe3
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://theoroe3@github.com': 
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 1.45 KiB | 1.45 MiB/s, done.
+Total 12 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/jr-packages/jrSpatial.git
+   2fac88d..4a6beeb  master -> master
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git pussh [A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Ccommit -m "fixing travis"[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cadd . [K

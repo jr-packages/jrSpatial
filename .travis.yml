@@ -11,6 +11,7 @@ r_packages:
 
 before_install:
   - tlmgr install fancyvrb units
+  - sudo apt-get install -y libudunits2-dev
 
 after_success:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/deploy.sh

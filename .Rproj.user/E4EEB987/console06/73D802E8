@@ -212,3 +212,42 @@ remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2) 
 To https://github.com/jr-packages/jrSpatial.git
    d554c40..d2bdc73  master -> master
 ]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git pussh [A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Ccommit -m "fixing travis"[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cadd . [K
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git addd . [A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cpus[1Ph[C[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Ccommit -m "fixing travis"
+[master 69266de] fixing travis
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git commmit -m "fixing travis"[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cadd . [K[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cpus[1Ph[C
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': theoroe3
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://theoroe3@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 950 bytes | 950.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/jr-packages/jrSpatial.git
+   d2bdc73..69266de  master -> master
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git st ats[Kus
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/E4EEB987/console06/73D802E8[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ ls
+DESCRIPTION  jrSpatial.Rproj  [0m[01;34mman[0m  NAMESPACE  [01;34mR[0m
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ ls -a
+[0m[01;34m.[0m            [01;34m.git[0m             [01;34mman[0m        .Rbuildignore
+[01;34m..[0m           .gitignore       NAMESPACE  [01;34m.Rproj.user[0m
+DESCRIPTION  jrSpatial.Rproj  [01;34mR[0m          .travis.yml
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git ad dd . 
+git: 'addd' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ gt[K[Kgit ad d . 

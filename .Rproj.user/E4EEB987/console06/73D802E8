@@ -102,3 +102,34 @@ remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  14% (1/7) 
 To https://github.com/jr-packages/jrSpatial.git
    7d52700..abc5556  master -> master
 ]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git pussh [A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Ccommit -a -m "adding travis and dependencies"
+[master e5bb197] adding travis and dependencies
+ 4 files changed, 18 insertions(+), 4 deletions(-)
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git commmit -a -m "adding travis and dependencies"[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cpush [K[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Ccommit -a -m "adding travis and dependencies"[A]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ [C[C[C[Cpush [K
+Counting objects: 11, done.
+Delta compression using up to 8 threads.
+Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
+Writing objects:   9% (1/11)   Writing objects:  18% (2/11)   Writing objects:  27% (3/11)   Writing objects:  36% (4/11)   Writing objects:  45% (5/11)   Writing objects:  54% (6/11)   Writing objects:  63% (7/11)   Writing objects:  72% (8/11)   Writing objects:  81% (9/11)   Writing objects:  90% (10/11)   Writing objects: 100% (11/11)   Writing objects: 100% (11/11), 1.52 KiB | 1.52 MiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/jr-packages/jrSpatial.git
+   abc5556..e5bb197  master -> master
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git st atus 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/E4EEB987/console06/73D802E8[m
+	[31mmodified:   .Rproj.user/E4EEB987/sources/prop/INDEX[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+	[31m.travis.yml[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/theo/GitHub/jr-packages/jrSpatial]0;theo@theo-Inspiron-5570: ~/GitHub/jr-packages/jrSpatial[01;32mtheo@theo-Inspiron-5570[00m:[01;34m~/GitHub/jr-packages/jrSpatial[00m$ git ad d . 

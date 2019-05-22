@@ -12,6 +12,7 @@ r_packages:
   - drat
 
 before_install:
+  - sudo apt-get install -y libudunits2-dev libgit2-dev libgdal1-dev
   - tlmgr install fancyvrb units
 
 before_script:

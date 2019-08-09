@@ -1,22 +1,26 @@
-Package: jrSpatial
 Type: Package
-Title: Jumping Rivers Data Sets
+Package: jrSpatial
+Title: Spatial Analysis using R
 Version: 0.1.1
-Author: Jumping Rivers
-Maintainer: Jumping Rivers <colin@jumpingrivers.com>
-Description: Data sets for courses.
+Authors@R: 
+    person(given = "Jumping",
+           family = "Rivers",
+           role = c("aut", "cre"),
+           email = "training@jumpingrivers.com")
+Description: Data sets and helper functions for the Jumping
+    Rivers Spatial analysis course.
 License: GPL-2
-Depends: R (>= 2.10)
+URL: https://jumpingrivers.com
+Depends: 
+    R (>= 3.3.0)
 Imports:
-    tidyverse, 
+    raster,
     sf,
-    tmaptools,
-    tmap,
-    spData,
-    raster
+    tidyverse,
+    tmap
 Suggests:
-    testthat,
-    lintr
+    lintr,
+    testthat
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1

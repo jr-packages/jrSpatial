@@ -4,4 +4,6 @@ Makefile
 ^README\.Rmd$
 ^README-.*\.png$
 ^.lintr$
-.travis.yml
+^\.travis\.yml$
+^Dockerfile$
+^test_deploy.sh$

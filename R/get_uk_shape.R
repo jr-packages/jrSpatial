@@ -14,7 +14,8 @@ get_uk_shape = function(){
          You can skip this question if you want. Alternatively let me know and
          I will send you a copy manually")
   }
-  if (!file.copy(from = fpath, to = getwd(), recursive = TRUE, overwrite = TRUE)){
+  if (!file.copy(from = fpath, to = getwd(),
+                 recursive = TRUE, overwrite = TRUE)){
     stop("Couldn't copy the file, you may not have permission to write to this
           directory. Try changing the working directory, either through the
           setwd() function or under Session in RStudio. If you still can't get

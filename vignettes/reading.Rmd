@@ -1,0 +1,19 @@
+---
+title: "Extra reading and data sources"
+author: "Jumping Rivers"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{reading}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Extra reading
+
+1. [Geomcompr by Robin Lovelace](https://bookdown.org/robinlovelace/geocompr/): A fantastic guide from Introduction to Advanced about all things Spatial in the R world.
+
+
+
+## Data sources
+
+1. UK Shape data. This was grabbed directly from the **eurostat** package, we've then done a bit of manipulation to get it into it's current form.  

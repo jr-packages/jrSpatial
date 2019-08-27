@@ -6,7 +6,6 @@
 #' @usage get_uk_shape()
 #' @return logical TRUE if the operation was successful
 #' @export
-
 get_uk_shape = function(){
   fpath = system.file("uk_shape", package = "jrSpatial")
   if (! nchar(fpath)){

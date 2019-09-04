@@ -20,7 +20,10 @@ Imports:
     tmap
 Suggests:
     lintr,
-    testthat
+    testthat,
+    knitr
 Encoding: UTF-8
 LazyData: true
+VignetteBuilder: 
+    knitr
 RoxygenNote: 6.1.1

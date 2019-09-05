@@ -17,7 +17,9 @@ Imports:
     raster,
     sf,
     tidyverse,
-    tmap
+    tmap, 
+    ggplot2, 
+    leaflet
 Suggests:
     lintr,
     testthat,

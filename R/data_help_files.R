@@ -115,3 +115,16 @@ NULL
 #'@examples
 #' data(canterbury)
 NULL
+
+#' Locations of meth lab busts in the US
+#'
+#' See vignette("reading", package = "jrSpatial") for
+#' source
+#'
+#'@name meth
+#'@docType data
+#'@return A tibble or data frame.
+#'@keywords datasets
+#'@examples
+#' data(meth)
+NULL

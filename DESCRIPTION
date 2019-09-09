@@ -19,11 +19,12 @@ Imports:
     tidyverse,
     tmap
 Suggests:
+    knitr,
     lintr,
     testthat,
+    webshot
+VignetteBuilder: 
     knitr
 Encoding: UTF-8
 LazyData: true
-VignetteBuilder: 
-    knitr
 RoxygenNote: 6.1.1

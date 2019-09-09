@@ -103,6 +103,19 @@ NULL
 #' data(nz)
 NULL
 
+#' Polygons for the regions of New Zealand, excluding Canterbury
+#'
+#' See vignette("reading", package = "jrSpatial") for
+#' source
+#'
+#'@name nz_missing
+#'@docType data
+#'@return A tibble or data frame.
+#'@keywords datasets
+#'@examples
+#' data(nz_missing)
+NULL
+
 #' Polygon for the Canterbury region of New Zealand
 #'
 #' See vignette("reading", package = "jrSpatial") for
@@ -114,4 +127,17 @@ NULL
 #'@keywords datasets
 #'@examples
 #' data(canterbury)
+NULL
+
+#' Latitude and Longitude for the seven wonders of the modern world
+#'
+#' See vignette("reading", package = "jrSpatial") for
+#' source
+#'
+#'@name wonders
+#'@docType data
+#'@return A tibble or data frame.
+#'@keywords datasets
+#'@examples
+#' data(nz_missing)
 NULL

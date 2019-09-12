@@ -13,14 +13,14 @@ head(meth)
 Confession: I've made up the pounds_seized column. Unfortunately the DEA don't give that kind of stuff out. However I've checked a couple of records and the numbers are within reason! 
 
 1. Using **leaflet**, create an interactive map of the locations of the meth lab busts. Hint: Use `addCircles()`
-```{r, fig.keep="none"}
+```{r, fig.keep="none", eval = FALSE}
 leaflet(meth) %>% 
   addTiles() %>% 
   addCircles(data = meth)
 ```
 
 2. Try adding the argument `radius = ~pounds_seized` to `addCircles()`. What happens?
-```{r, fig.keep="none"}
+```{r, fig.keep="none", eval = FALSE}
 leaflet(meth) %>% 
   addTiles() %>% 
   addCircles(data = meth, 
@@ -29,7 +29,7 @@ leaflet(meth) %>%
 ```
 
 3. Try colouring the points by the pounds seized. To do this, use the `colourNumeric()`
-```{r, fig.keep="none"}
+```{r, fig.keep="none", eval = FALSE}
 pal_size = colorNumeric(palette = c("green", "red"), 
                         domain = meth$pounds_seized)
 
@@ -41,17 +41,17 @@ leaflet(meth) %>%
 ```
 
 4. The problem with using `colourNumeric()` in this instance, is that the data is heavily skewed. If we look at a histogram of the pounds_seized, there isn't many meth labs that had over 1000 pounds of meth seized
-```{r, echo = TRUE, results="show"}
+```{r, echo = TRUE, results="show", eval = FALSE}
 library("ggplot2")
 ggplot(meth, aes(x = pounds_seized)) + 
   geom_histogram()
 ```
 
 5. We can set up a colour scheme such that we have discrete colours using `colourBin()`, like so
-```{r, echo = TRUE}
+```{r, echo = TRUE, eval = FALSE}
 pal_size_bin = colorBin(palette = c("Green", "Yellow", "Orange", "Red"), 
                         domain = meth$pounds_seized, 
-                        bins = c(0,150,300,750,max(meth$pounds_seized)))
+                        bins = c(0,150,300,750, max(meth$pounds_seized)))
 ```
 What colour scheme do you think we're using here?
 ```{r}
@@ -62,7 +62,7 @@ What colour scheme do you think we're using here?
 ```
 
 6. Use the new colour scheme to colour the points
-```{r, fig.keep="none"}
+```{r, fig.keep="none", eval = FALSE}
 leaflet(meth) %>% 
   addTiles() %>% 
   addCircles(data = meth, 
@@ -71,7 +71,7 @@ leaflet(meth) %>%
 ```
 
 7. Add a legend to the plot
-```{r, fig.keep="none"}
+```{r, fig.keep="none", eval = FALSE}
 leaflet(meth) %>% 
   addTiles() %>% 
   addCircles(data = meth, 

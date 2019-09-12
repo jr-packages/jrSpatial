@@ -131,6 +131,10 @@ NULL
 
 #' Locations of meth lab busts in the US
 #' @name meth
+#' @docType data
+#' @return A tibble or data frame.
+#' @keywords datasets
+#' @examples
 #' data(meth)
 NULL
 

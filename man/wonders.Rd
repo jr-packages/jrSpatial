@@ -8,10 +8,9 @@
 A tibble or data frame.
 }
 \description{
-See vignette("reading", package = "jrSpatial") for
-source
+Latitude and Longitude for the seven wonders of the modern world
 }
 \examples{
-data(nz_missing)
+data(wonders)
 }
 \keyword{datasets}

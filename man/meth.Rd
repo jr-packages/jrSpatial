@@ -8,8 +8,7 @@
 A tibble or data frame.
 }
 \description{
-See vignette("reading", package = "jrSpatial") for
-source
+Locations of meth lab busts in the US
 }
 \examples{
 data(meth)

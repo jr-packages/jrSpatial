@@ -17,3 +17,5 @@ vignette: >
 ## Data sources
 
 1. UK Shape data. This was grabbed directly from the **eurostat** package, we've then done a bit of manipulation to get it into it's current form.  
+
+2. Us meth data. We grabbed this from [geocommons](http://geocommons.com/datasets?id=26). After that, we made up the pounds seized information to make it more interesting!

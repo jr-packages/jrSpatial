@@ -1,0 +1,83 @@
+This practical is all about Methamphetamines! Yes, you read that right. Let's load in the data and necessary packages first
+```{r, message = FALSE, warning = FALSE}
+library("sf")
+library("leaflet")
+library("dplyr")
+data(meth, package = "jrSpatial")
+```
+
+This is a dataset containing locations of real meth lab busts in the US. Take a look at the data to get a feel of it
+```{r}
+head(meth)
+```
+Confession: I've made up the pounds_seized column. Unfortunately the DEA don't give that kind of stuff out. However I've checked a couple of records and the numbers are within reason! 
+
+1. Using **leaflet**, create an interactive map of the locations of the meth lab busts. Hint: Use `addCircles()`
+```{r, fig.keep="none"}
+leaflet(meth) %>% 
+  addTiles() %>% 
+  addCircles(data = meth)
+```
+
+2. Try adding the argument `radius = ~pounds_seized` to `addCircles()`. What happens?
+```{r, fig.keep="none"}
+leaflet(meth) %>% 
+  addTiles() %>% 
+  addCircles(data = meth, 
+             radius = ~pounds_seized)
+# radius of circles is bigger if more pounds of meth were seized
+```
+
+3. Try colouring the points by the pounds seized. To do this, use the `colourNumeric()`
+```{r, fig.keep="none"}
+pal_size = colorNumeric(palette = c("green", "red"), 
+                        domain = meth$pounds_seized)
+
+leaflet(meth) %>% 
+  addTiles() %>% 
+  addCircles(data = meth, 
+             radius = ~pounds_seized, 
+             color = ~pal_size(pounds_seized))
+```
+
+4. The problem with using `colourNumeric()` in this instance, is that the data is heavily skewed. If we look at a histogram of the pounds_seized, there isn't many meth labs that had over 1000 pounds of meth seized
+```{r, echo = TRUE, results="show"}
+library("ggplot2")
+ggplot(meth, aes(x = pounds_seized)) + 
+  geom_histogram()
+```
+
+5. We can set up a colour scheme such that we have discrete colours using `colourBin()`, like so
+```{r, echo = TRUE}
+pal_size_bin = colorBin(palette = c("Green", "Yellow", "Orange", "Red"), 
+                        domain = meth$pounds_seized, 
+                        bins = c(0,150,300,750,max(meth$pounds_seized)))
+```
+What colour scheme do you think we're using here?
+```{r}
+# green - from 0 -150
+# yellow - from 150 - 300
+# orange - from 300 - 750
+# red - from 750 - max value in pounds_seized
+```
+
+6. Use the new colour scheme to colour the points
+```{r, fig.keep="none"}
+leaflet(meth) %>% 
+  addTiles() %>% 
+  addCircles(data = meth, 
+             radius = ~pounds_seized, 
+             color = ~pal_size_bin(pounds_seized))
+```
+
+7. Add a legend to the plot
+```{r, fig.keep="none"}
+leaflet(meth) %>% 
+  addTiles() %>% 
+  addCircles(data = meth, 
+             radius = ~pounds_seized, 
+             color = ~pal_size_bin(pounds_seized)) %>% 
+  addLegend(title = "Pounds seized",
+            pal = pal_size_bin, 
+            values = ~pounds_seized)
+```

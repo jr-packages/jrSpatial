@@ -1,0 +1,128 @@
+# Practical 3
+
+We'll start by loading the necessary packages.
+
+```{r load libraries, echo = TRUE, message = FALSE, warning = FALSE}
+library("sf")
+library("tmap")
+library("jrSpatial")
+```
+
+# Question 1
+
+Load in the `ukgeom` data using 
+```{r, eval = FALSE, echo = TRUE}
+data(ukgeom, package = "jrSpatial")
+```
+
+1. Calculate the population density for 2017 and save these in new columns. Population density is defined as the populatation divided by the area.
+
+Bonus question: Use `tmap()` to create a plot to show the population density in 2017 across the U.K. 
+
+```{r, popdensity, echo = FALSE}
+library("dplyr")
+ukgeom = 
+ukgeom  %>%
+  mutate(pop_den_2017 = pop_2017 / area)
+
+  # Bonus
+tm_shape(ukgeom) +
+  tm_borders() +
+  tm_fill("pop_den_2017")+ 
+  tm_layout(legend.outside = TRUE)
+```
+
+2. There is another dataset `ukData` which contains extra statistics about the UK regions such as birth rates and income. Load this data using 
+```{r, eval = FALSE, echo = TRUE}
+data(ukdata, package = "jrSpatial")
+```
+
+Create a new data frame called `ukgeomfull` which combines `ukgeom` with `ukdata` using `left_join()`.
+
+Does the order of the arguments matter? What happens if you put `ukdata` as the first argument instead of `ukgeom`? (Hint: Look at the class of the output using `class()`.)
+
+```{r left_join}
+library("tidyr")
+ukgeomfull = left_join(ukgeom, ukdata, by = c("id" = "geo"))
+class(ukgeomfull)
+# The output is still recognised as an sf spatial dataframe.
+
+ukgeomfull_reverse = left_join(ukdata, ukgeom, by = c("geo" = "id"))
+class(ukgeomfull_reverse)
+# Notice this output is recognised as a data frame, but not as being an sf data frame. This means that functions like tmap() will not work. 
+```
+
+3. Use `filter()` to find the regions with the following characteristics.
+* Have a population (in 2017) greater than 1,600,000.
+* Has a disposable income of less than 15000 or and unemployment rate of greater than 5.
+
+```{r q3}
+ukgeomfull %>%
+  filter(pop_2017 > 2500000) 
+
+ukgeomfull %>%
+  filter(income < 15000 | unemployment > 5) 
+```
+
+4. Use `group_by()` and `summarise()` to answer the following questions. You may wish to drop the geometry column with `st_drop_geometry()` to make the output easier to view.
+
+* What was the total population in 2017 for each country? 
+* What about the average life expenctancy? 
+
+```{r q6}
+ukgeomfull %>%
+  st_drop_geometry() %>%
+  group_by(country) %>%
+    summarise(total_pop = sum(pop_2017),
+              avg_life = round(mean(lifeExp)))
+```
+
+# Question 2
+## Hills of UK
+
+The `ukhills` dataset includes the name, height and geometry of all the Marilyns in the U.K. A Marilyns is a hill which  relatively high compared to its surroundings. Load it into R using
+```{r, eval=FALSE, echo = TRUE}
+data(ukhills, package = "jrSpatial")
+```
+
+1. We'd like to know which region each of the hills are in. In order to do this, we'll need to combine the `ukgeom` data with the `ukhills` data set. There are no common columns, so this time we'll be joining by geometry. Use `st_join` create a new data frame called `hills_uk` which merges `ukhills` and `ukgeom`. Use `View()` to inspect the output.
+
+```{r marilyns data}
+hills_uk = st_join(ukhills, ukgeom)
+```
+
+2. Use `tm_shape()` and `tm_dots()` to overlay the hills data on the UK regions borders.
+```{r marilyns}
+tm_shape(hills_uk) + tm_dots() +
+  tm_shape(ukgeom) + tm_borders()
+```
+
+Don't worry about the warning "although coordinates are longitude/latitude, `st_intersects` assumes that they are planar" - This is only a problem if points are massive distances away or near the poles.
+
+
+2. After joining there are NAs in the region column.  Why have these occured? What do they represent? Plotting the data may help you.
+
+```{r Ireland NA}
+# There are number of Marilyns in the dataset which are located in Ireland. Ireland is not included in the ukgeom data, and therefore st_join() sets the region as NA for these hills.
+```
+
+3. Use `filter()` and `arrange()` to find the three highest Marilyns in Cumbria.
+
+```{r highest marilyn by region}
+hills_uk %>%
+  st_drop_geometry() %>%
+  filter(region == "Cumbria") %>%
+  arrange(desc(Metres)) %>%
+  slice(1:3)
+```
+
+4. Use `group_by()`, and `summarise()` to work out which region has the most Marilyns
+
+```{r marilyns by region}
+hills_uk %>%
+  st_drop_geometry() %>%
+  group_by(region) %>%
+  summarise(total = n()) %>%
+  arrange(desc(total)) %>%
+  slice(1)
+```

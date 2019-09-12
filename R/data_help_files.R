@@ -129,15 +129,16 @@ NULL
 #' data(canterbury)
 NULL
 
+#' Locations of meth lab busts in the US
+#' @name meth
+#' data(meth)
+NULL
+
 #' Latitude and Longitude for the seven wonders of the modern world
-#'
-#' See vignette("reading", package = "jrSpatial") for
-#' source
-#'
-#'@name wonders
-#'@docType data
-#'@return A tibble or data frame.
-#'@keywords datasets
-#'@examples
-#' data(nz_missing)
+#' @name wonders
+#' @docType data
+#' @return A tibble or data frame.
+#' @keywords datasets
+#' @examples
+#' data(wonders)
 NULL

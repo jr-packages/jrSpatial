@@ -1,0 +1,80 @@
+# Practical 4
+
+We'll start by loading the necessary packages.
+
+```{r load libraries, echo = TRUE, message = FALSE, warning = FALSE}
+library("sf")
+library("dplyr")
+library("tmap")
+library("jrSpatial")
+```
+
+Question 1. # THEO We could make them create a geometry point instead with `st_point()`?
+
+1. Create a dataframe representing our current location and it's longitude and latitude. `loc = data.frame(lon = , lat = )`. You can use Google Maps to find our current longitude and latitude.
+
+```{r create lon lat}
+loc = data.frame(lon = -1.6053, lat = 54.9705)
+```
+
+2. In practical 1, we learned how to create a **sf** data frame from scratch using `st_sf()`. Because our coordinates are just numeric columns instead of a single geometry column, we can't use `st_sf()`. Instead we have to use `st_as_sf()` and specify the coordinate columns using the `coords` argument, like so 
+```{r sf convert, echo = TRUE}
+loc = st_as_sf(loc, coords = c("lon", "lat"))
+```
+
+3. Inspect the dataframe. Use the function `st_is_longlat()` to check whether the data is recognised as using longlat degrees. What about `st_crs()`?
+
+```{r longlat check}
+st_is_longlat(loc)
+st_crs(loc)
+# no longlat because we have not set the coordinate ref system yet
+```
+
+4. Set the CRS to have epsg 4326 using `st_set_crs()` and then check `st_is_longlat()` again. 
+
+```{r set crs longlat check}
+loc = st_set_crs(loc, 4236)
+st_is_longlat(loc)
+```
+
+
+
+Question 2. 
+
+1. Load the shape files for New Zealand using `data(nz, package = "jrSpatial")`. Plot the data using `tm_shape()` with `tm_borders()`. What do you notice?
+
+```{r nz}
+data(nz, package = "jrSpatial")
+tm_shape(nz) + tm_borders() + tm_fill()
+
+# Part of New Zealand is missing. 
+```
+
+2. The Canterbury region of New Zealand is missing from the data. Load in the Canterbury data using 
+```{r, echo = TRUE}
+data(canterbury, package = "jrSpatial")
+```
+Say we have two spatial data frame, `x` and `y`, we can row bind them by using 
+```{r, echo = TRUE, eval = FALSE}
+rbind(x, y)
+```
+Try to use `rbind()` to add the Canterbury row to the original New Zealand data. What does the output tell you?
+
+```{r cant bind, eval = FALSE}
+nz = rbind(nz, canterbury)
+# The two data sets have different CRS. R won't let us combine them.
+```
+
+3. The two data sets have different CRS. Find out the CRS of the New Zealand data using `st_crs().` Then use `st_transform()` to transform the Canterbury data to use the same CRS as the rest of New Zealand. Combine the data with `rbind()` and plot the output. 
+
+```{r transform}
+st_crs(nz)
+canterbury = st_transform(canterbury, 4326)
+
+nz = rbind(nz, canterbury)
+
+tm_shape(nz) + tm_borders() + tm_fill()
+```
+
+
+

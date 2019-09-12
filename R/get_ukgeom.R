@@ -3,11 +3,11 @@
 #' This function will attempt to create a local copy of the uk shape file
 #' such that you can make sure that you are happy with reading in data from shape files
 #'
-#' @usage get_uk_shape()
+#' @usage get_ukgeom()
 #' @return logical TRUE if the operation was successful
 #' @export
-get_uk_shape = function(){
-  fpath = system.file("uk_shape", package = "jrSpatial")
+get_ukgeom = function(){
+  fpath = system.file("ukgeom", package = "jrSpatial")
   if (! nchar(fpath)){
     stop("Something wen't wrong, package internal csv file could not be found.
          You can skip this question if you want. Alternatively let me know and

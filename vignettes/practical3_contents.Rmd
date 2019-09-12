@@ -4,7 +4,6 @@ We'll start by loading the necessary packages.
 
 ```{r load libraries, echo = TRUE, message = FALSE, warning = FALSE}
 library("sf")
-library("tidyverse")
 library("tmap")
 library("jrSpatial")
 ```
@@ -21,6 +20,7 @@ data(ukgeom, package = "jrSpatial")
 Bonus question: Use `tmap()` to create a plot to show the population density in 2017 across the U.K. 
 
 ```{r, popdensity, echo = FALSE}
+library("dplyr")
 ukgeom = 
 ukgeom  %>%
   mutate(pop_den_2017 = pop_2017 / area)
@@ -42,6 +42,7 @@ Create a new data frame called `ukgeomfull` which combines `ukgeom` with `ukdata
 Does the order of the arguments matter? What happens if you put `ukdata` as the first argument instead of `ukgeom`? (Hint: Look at the class of the output using `class()`.)
 
 ```{r left_join}
+library("tidyr")
 ukgeomfull = left_join(ukgeom, ukdata, by = c("id" = "geo"))
 class(ukgeomfull)
 # The output is still recognised as an sf spatial dataframe.

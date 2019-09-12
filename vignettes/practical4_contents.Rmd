@@ -4,7 +4,7 @@ We'll start by loading the necessary packages.
 
 ```{r load libraries, echo = TRUE, message = FALSE, warning = FALSE}
 library("sf")
-library("tidyverse")
+library("dplyr")
 library("tmap")
 library("jrSpatial")
 ```

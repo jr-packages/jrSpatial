@@ -43,7 +43,7 @@ Question 2.
 
 1. Load the shape files for New Zealand using `data(nz, package = "jrSpatial")`. Plot the data using `tm_shape()` with `tm_borders()`. What do you notice?
 
-```{r nz}
+```{r nz, fig.keep= 'none'}
 data(nz_missing, package = "jrSpatial")
 tm_shape(nz_missing) + tm_borders() + tm_fill()
 
@@ -67,7 +67,7 @@ nz = rbind(nz, canterbury)
 
 3. The two data sets have different CRS. Find out the CRS of the New Zealand data using `st_crs().` Then use `st_transform()` to transform the Canterbury data to use the same CRS as the rest of New Zealand. Combine the data with `rbind()` and plot the output. 
 
-```{r transform}
+```{r transform, fig.keep= 'none'}
 st_crs(nz_missing)
 canterbury = st_transform(canterbury, 4326)
 

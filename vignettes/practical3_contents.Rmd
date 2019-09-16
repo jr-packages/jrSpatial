@@ -19,7 +19,7 @@ data(ukgeom, package = "jrSpatial")
 
 Bonus question: Use `tmap()` to create a plot to show the population density in 2017 across the U.K. 
 
-```{r, popdensity, echo = FALSE}
+```{r, popdensity, echo = FALSE, fig.keep = 'none'}
 library("dplyr")
 ukgeom = 
 ukgeom  %>%
@@ -92,7 +92,7 @@ hills_uk = st_join(ukhills, ukgeom)
 ```
 
 2. Use `tm_shape()` and `tm_dots()` to overlay the hills data on the UK regions borders.
-```{r marilyns}
+```{r marilyns, fig.keep = 'none'}
 tm_shape(hills_uk) + tm_dots() +
   tm_shape(ukgeom) + tm_borders()
 ```

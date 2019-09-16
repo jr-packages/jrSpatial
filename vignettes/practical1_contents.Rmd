@@ -85,7 +85,7 @@ We'll go through the 7 types of simple features objects. Have a go at running th
 
 ## Question 2b - cooking with **sf**
 
-1) Hurricane Shary hit the Americas in October 2010. We've managed to attain the approximate longitude and latitude for the storm every 6 hours it was active. You can see the data in table BLAH. To get you started, I've created the matrix of longitudes and latitudes. Turn the matrix into a **sf** linestring and plot it
+1) Hurricane Shary hit the Americas in October 2010. We've managed to attain the approximate longitude and latitude for the storm every 6 hours it was active. To get you started, I've created the matrix of longitudes and latitudes. Turn the matrix into a **sf** linestring and plot it
     ```{r, fig.keep='none', echo = TRUE}
     longitude = c(-61, -63, -65, -66, -66) 
     latitude = c(26, 27, 28, 29, 30)
@@ -96,7 +96,13 @@ We'll go through the 7 types of simple features objects. Have a go at running th
     plot(shary)
     ```
 
-2) 12 hours after Shary was declassified to a tropical storm, it was upgraded again to a hurricane. You can see this data in table BLAH. Create a matrix called `shary_matrix2`, using code similar to that of question 1. Combine the two matrices `shary_matrix` and `shary_matrix2` into a multilinestring
+| Longitude 	| Latitude 	|
+|-----------	|----------	|
+| -64       	| 31       	|
+| -61       	| 33       	|
+| -57       	| 35       	|
+
+2) 12 hours after Shary was declassified to a tropical storm, it was upgraded again to a hurricane. You can see this data the table. Create a matrix called `shary_matrix2`, using code similar to that of question 1. Combine the two matrices `shary_matrix` and `shary_matrix2` into a multilinestring
     ```{r}
     longitude2 = c(-64, -61, -57)
     latitude2 = c(31, 33, 35)

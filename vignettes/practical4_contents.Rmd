@@ -9,7 +9,7 @@ library("tmap")
 library("jrSpatial")
 ```
 
-Question 1. # THEO We could make them create a geometry point instead with `st_point()`?
+Question 1
 
 1. Create a dataframe representing our current location and it's longitude and latitude. `loc = data.frame(lon = , lat = )`. You can use Google Maps to find our current longitude and latitude.
 

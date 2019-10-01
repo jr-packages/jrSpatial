@@ -26,5 +26,5 @@ knitr::opts_chunk$set(results = "hide", echo = FALSE)
 ## Solutions
 
 ```{r, eval= FALSE, echo = TRUE}
-vignette("solutions4", package = "jrIntroduction")
+vignette("solutions4", package = "jrSpatial")
 ```

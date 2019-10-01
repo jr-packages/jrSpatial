@@ -20,3 +20,9 @@ knitr::opts_chunk$set(results = "hide", echo = FALSE)
 
 ```{r child = 'practical1_contents.Rmd'}
 ```
+
+## Solutions
+
+```{r, eval= FALSE, echo = TRUE}
+vignette("solutions1", package = "jrSpatial")
+```

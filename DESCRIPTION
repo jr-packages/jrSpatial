@@ -1,7 +1,7 @@
 Type: Package
 Package: jrSpatial
 Title: Spatial Analysis using R
-Version: 0.1.6
+Version: 0.1.7
 Authors@R: 
     person(given = "Jumping",
            family = "Rivers",
@@ -17,15 +17,18 @@ Imports:
     raster,
     sf,
     dplyr,
+    tibble,
     tidyr,
     tmap, 
     ggplot2, 
     leaflet
 Suggests:
     cartogram,
+    cartography,
     DT,
     knitr,
     lintr,
+    maptools,
     testthat,
     tufte,
     webshot

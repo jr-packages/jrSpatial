@@ -1,7 +1,7 @@
 Type: Package
 Package: jrSpatial
 Title: Spatial Analysis using R
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: 
     person(given = "Jumping",
            family = "Rivers",
@@ -22,6 +22,7 @@ Imports:
     ggplot2, 
     leaflet
 Suggests:
+    cartogram,
     DT,
     knitr,
     lintr,

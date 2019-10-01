@@ -1,7 +1,7 @@
 Type: Package
 Package: jrSpatial
 Title: Spatial Analysis using R
-Version: 0.1.7
+Version: 0.1.7.1
 Authors@R: 
     person(given = "Jumping",
            family = "Rivers",
@@ -26,6 +26,7 @@ Suggests:
     cartogram,
     cartography,
     DT,
+    ggspatial,
     knitr,
     lintr,
     maptools,

@@ -25,7 +25,6 @@ Imports:
 Suggests:
     cartogram,
     cartography,
-    countdown,
     DT,
     knitr,
     lintr,

@@ -11,5 +11,6 @@ logical TRUE if the operation was successful
 }
 \description{
 This function will attempt to create a local copy of the uk shape file
-such that you can make sure that you are happy with reading in data from shape files
+such that you can make sure that you are happy with reading in data
+from shape files
 }

@@ -116,6 +116,17 @@ NULL
 #' data(nz_missing)
 NULL
 
+#' Raster representation of elevation in New Zealand
+#'
+#'
+#'@name nz_elev
+#'@docType data
+#'@return A tibble or data frame.
+#'@keywords datasets
+#'@examples
+#' data(nz_elev)
+NULL
+
 #' Polygon for the Canterbury region of New Zealand
 #'
 #' See vignette("reading", package = "jrSpatial") for

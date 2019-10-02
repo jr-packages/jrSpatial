@@ -90,17 +90,17 @@ NULL
 #' data(nz)
 NULL
 
-#' Polygons for the regions of New Zealand
+#' Elevation data for New Zealand stored as raster
 #'
 #' See vignette("reading", package = "jrSpatial") for
 #' source
 #'
-#'@name nz
+#'@name nz_elev
 #'@docType data
 #'@return A tibble or data frame.
 #'@keywords datasets
 #'@examples
-#' data(nz)
+#' data(nz_elev)
 NULL
 
 #' Polygons for the regions of New Zealand, excluding Canterbury

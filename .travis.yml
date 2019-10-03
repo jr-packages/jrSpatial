@@ -12,15 +12,12 @@ r_packages:
   - drat
 
 before_install:
-  - sudo apt-get install -y libudunits2-dev libgdal-dev
   - tlmgr install fancyvrb units
 
 before_script:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/test_deploy.sh
   - bash test_deploy.sh
-
-script:
-  - Rscript -e 'lintr::lint_package()'
+  - rm test_deploy.sh
 
 after_success:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/deploy.sh

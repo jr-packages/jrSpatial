@@ -1,7 +1,7 @@
 Type: Package
 Package: jrSpatial
 Title: Spatial Analysis using R
-Version: 0.1.7.2
+Version: 0.1.7.6
 Authors@R: 
     person(given = "Jumping",
            family = "Rivers",

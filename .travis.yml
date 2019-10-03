@@ -19,6 +19,9 @@ before_script:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/test_deploy.sh
   - bash test_deploy.sh
   - rm test_deploy.sh
+  
+script:
+  - Rscript -e 'lintr::lint_package()'
 
 after_success:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/deploy.sh

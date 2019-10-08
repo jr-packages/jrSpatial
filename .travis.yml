@@ -21,9 +21,9 @@ before_script:
   - rm test_deploy.sh
   
 script:
-  - ls
+  - R CMD build
+  - R CMD check *tar.gz
   - Rscript -e 'lintr::lint_package()'
-  - ls
 
 after_success:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/deploy.sh

@@ -8,7 +8,7 @@
 #' @return logical TRUE if the operation was successful
 #' @export
 get_ukgeom = function() {
-  fpath =system.file("ukgeom", package = "jrSpatial")
+  fpath = system.file("ukgeom", package = "jrSpatial")
   if (! nchar(fpath)) {
     stop("Something wen't wrong, package internal csv file could not be found.
          You can skip this question if you want. Alternatively let me know and

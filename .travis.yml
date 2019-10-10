@@ -19,7 +19,7 @@ r_github_packages:
   - jumpingrivers/inteRgrate
 
 before_install:
-  - sudo apt-get install -y libudunits2-dev libgdal-dev
+  - sudo apt-get install -y libudunits2-dev libgdal-dev ghostscript
   - tlmgr install fancyvrb units
 
 before_script:

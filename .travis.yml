@@ -8,6 +8,10 @@ notifications:
     on_success: change
     on_failure: change
 
+env:
+  global:
+    - ALLOWED_NOTES=1
+
 r_packages:
   - drat
 

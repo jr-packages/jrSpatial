@@ -14,14 +14,14 @@ URL: https://jumpingrivers.com
 Depends: 
     R (>= 3.4.0)
 Imports:
+    dplyr,
+    ggplot2,
+    leaflet,
     raster,
     sf,
-    dplyr,
     tibble,
     tidyr,
-    tmap, 
-    ggplot2, 
-    leaflet
+    tmap
 Suggests:
     cartogram,
     cartography,

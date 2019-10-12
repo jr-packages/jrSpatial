@@ -28,7 +28,7 @@ ukgeom  %>%
   # Bonus
 tm_shape(ukgeom) +
   tm_borders() +
-  tm_fill("pop_den_2017")+ 
+  tm_fill("pop_den_2017") + 
   tm_layout(legend.outside = TRUE)
 ```
 
@@ -49,7 +49,8 @@ class(ukgeomfull)
 
 ukgeomfull_reverse = left_join(ukdata, ukgeom, by = c("geo" = "id"))
 class(ukgeomfull_reverse)
-# Notice this output is recognised as a data frame, but not as being an sf data frame. This means that functions like tmap() will not work. 
+# Notice this output is recognised as a data frame, but not as being an sf data frame.
+# This means that functions like tmap() will not work. 
 ```
 
 3. Use `filter()` to find the regions with the following characteristics.
@@ -103,7 +104,9 @@ Don't worry about the warning "although coordinates are longitude/latitude, `st_
 2. After joining there are NAs in the region column.  Why have these occured? What do they represent? Plotting the data may help you.
 
 ```{r Ireland NA}
-# There are number of Marilyns in the dataset which are located in Ireland. Ireland is not included in the ukgeom data, and therefore st_join() sets the region as NA for these hills.
+# There are number of Marilyns in the dataset which are located in Ireland. 
+# Ireland is not included in the ukgeom data, and therefore st_join() sets the 
+# region as NA for these hills.
 ```
 
 3. Use `filter()` and `arrange()` to find the three highest Marilyns in Cumbria.

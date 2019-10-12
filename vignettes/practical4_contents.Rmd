@@ -47,7 +47,7 @@ Question 2.
 data(nz_missing, package = "jrSpatial")
 tm_shape(nz_missing) + tm_borders() + tm_fill()
 
-# Part of New Zealand is missing. 
+# Part of New Zealand is missing.
 ```
 
 2. The Canterbury region of New Zealand is missing from the data. Load in the Canterbury data using 

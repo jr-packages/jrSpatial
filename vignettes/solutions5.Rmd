@@ -16,5 +16,5 @@ library(tufte)
 # knitr::opts_chunk$set(results = "hide", echo = FALSE)
 ```
 
-
+```{r child = 'practical5_contents.Rmd'}
 ```

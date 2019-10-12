@@ -45,7 +45,7 @@ We'll go through the 7 types of simple features objects. Have a go at running th
 
 2. Multipoint. This is one **sf** object that contains multiple points. Before converting it to a multipoint object the points need to be a matrix. Where each row is a point
     ```{r, fig.keep="none", echo = TRUE}
-    ps = rbind(c(10,10), c(10,9), c(11,9), c(11,10))
+    ps = rbind(c(10, 10), c(10, 9), c(11, 9), c(11, 10))
     mp = st_multipoint(ps)
     plot(mp)
     ```
@@ -58,21 +58,21 @@ We'll go through the 7 types of simple features objects. Have a go at running th
 
 4. Multilinestring. This is one **sf** object that contains multiple separate lines. Use `sf_multilinestring()` to create these. Notice the lines have to be in a list
     ```{r, fig.keep="none", echo = TRUE}
-    ps2 = rbind(c(11,11), c(12,11))
+    ps2 = rbind(c(11, 11), c(12, 11))
     mls = st_multilinestring(list(ps, ps2))
     plot(mls)
     ```
     
 5. Polygon. This is a shape. On a map you'd think of this as a country or island. Use `st_polygon()` to create a polygon. Again, in a list! 
     ```{r, fig.keep="none", echo = TRUE}
-    pol_points = rbind(c(10,10), c(10,9), c(11,9), c(11,10), c(10,10))
+    pol_points = rbind(c(10, 10), c(10, 9), c(11, 9), c(11, 10), c(10, 10))
     pol = st_polygon(list(pol_points))
     plot(pol)
     ```
     
 6. Multipolygon. This is one **sf** object containing multiple polygons. The function used is `st_multipolygon()` and each polygon is within it's own list, inside another list.
     ```{r, fig.keep="none", echo = TRUE}
-    pol_points2 = rbind(c(12,12), c(13,13), c(14,12), c(12,12))
+    pol_points2 = rbind(c(12, 12), c(13, 13), c(14, 12), c(12, 12))
     mpol = st_multipolygon(list(list(pol_points), list(pol_points2)))
     plot(mpol)
     ```
@@ -87,7 +87,7 @@ We'll go through the 7 types of simple features objects. Have a go at running th
 
 1) Hurricane Shary hit the Americas in October 2010. We've managed to attain the approximate longitude and latitude for the storm every 6 hours it was active. To get you started, I've created the matrix of longitudes and latitudes. Turn the matrix into a **sf** linestring and plot it
     ```{r, fig.keep='none', echo = TRUE}
-    longitude = c(-61, -63, -65, -66, -66) 
+    longitude = c(-61, -63, -65, -66, -66)
     latitude = c(26, 27, 28, 29, 30)
     shary_matrix = cbind(longitude, latitude)
     ```
@@ -121,7 +121,7 @@ We'll go through the 7 types of simple features objects. Have a go at running th
 
 4) Ideally we'd like to keep all of these inside of a data.frame with one column containing the geometry. Just like `uk_shape`. We can do this using `st_sf()` and `st_sfc()`
     ```{r, echo = TRUE}
-    hurricane = st_sf(name = c("Shary", "Colin"), 
+    hurricane = st_sf(name = c("Shary", "Colin"),
                       geometry = st_sfc(shary, colin))
     ```
 Try plotting `hurricane`, what happens?

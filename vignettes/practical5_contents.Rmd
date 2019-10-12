@@ -51,7 +51,7 @@ ggplot(meth, aes(x = pounds_seized)) +
 ```{r, echo = TRUE, eval = FALSE}
 pal_size_bin = colorBin(palette = c("Green", "Yellow", "Orange", "Red"), 
                         domain = meth$pounds_seized, 
-                        bins = c(0,150,300,750, max(meth$pounds_seized)))
+                        bins = c(0, 150, 300, 750, max(meth$pounds_seized)))
 ```
 What colour scheme do you think we're using here?
 ```{r}

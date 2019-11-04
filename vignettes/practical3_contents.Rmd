@@ -1,5 +1,3 @@
-# Practical 3
-
 We'll start by loading the necessary packages.
 
 ```{r load libraries, echo = TRUE, message = FALSE, warning = FALSE}
@@ -19,7 +17,7 @@ data(ukgeom, package = "jrSpatial")
 
 Bonus question: Use `tmap()` to create a plot to show the population density in 2017 across the U.K. 
 
-```{r, popdensity, echo = FALSE, fig.keep = 'none'}
+```{r, popdensity, echo = FALSE, fig.keep = 'none', warning = FALSE}
 library("dplyr")
 ukgeom = 
 ukgeom  %>%
@@ -88,7 +86,7 @@ data(ukhills, package = "jrSpatial")
 
 1. We'd like to know which region each of the hills are in. In order to do this, we'll need to combine the `ukgeom` data with the `ukhills` data set. There are no common columns, so this time we'll be joining by geometry. Use `st_join` create a new data frame called `hills_uk` which merges `ukhills` and `ukgeom`. Use `View()` to inspect the output.
 
-```{r marilyns data}
+```{r marilyns data, warning = FALSE}
 hills_uk = st_join(ukhills, ukgeom)
 ```
 
@@ -121,7 +119,7 @@ hills_uk %>%
 
 4. Use `group_by()`, and `summarise()` to work out which region has the most Marilyns
 
-```{r marilyns by region}
+```{r marilyns by region, warning = FALSE}
 hills_uk %>%
   st_drop_geometry() %>%
   group_by(region) %>%

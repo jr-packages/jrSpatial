@@ -1,5 +1,3 @@
-# Practical 1
-
 ## Question 1 - reading in data
 
 First let's load the required libraries

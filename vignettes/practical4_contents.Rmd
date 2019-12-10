@@ -39,7 +39,7 @@ st_is_longlat(loc)
 
 Question 2. 
 
-1. Load the shape files for New Zealand using `data(nz, package = "jrSpatial")`. Plot the data using `tm_shape()` with `tm_borders()`. What do you notice?
+1. Load the shape files for New Zealand using `data(nz_missing, package = "jrSpatial")`. Plot the data using `tm_shape()` with `tm_borders()`. What do you notice?
 
 ```{r nz, fig.keep= 'none'}
 data(nz_missing, package = "jrSpatial")

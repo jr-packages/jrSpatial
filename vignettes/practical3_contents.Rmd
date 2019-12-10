@@ -53,7 +53,7 @@ class(ukgeomfull_reverse)
 
 3. Use `filter()` to find the regions with the following characteristics.
 * Have a population (in 2017) greater than 1,600,000.
-* Has a disposable income of less than 15000 or and unemployment rate of greater than 5.
+* Has a disposable income of less than 15000 or an unemployment rate of greater than 5.
 
 ```{r q3}
 ukgeomfull %>%

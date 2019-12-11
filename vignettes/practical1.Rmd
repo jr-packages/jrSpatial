@@ -1,5 +1,6 @@
 ---
-title: "Practical 1"
+title: "`r paste0(as.character(read.dcf('../DESCRIPTION', fields = 'Package')), ' - Practical  1')`"
+shorttitle: "Test"
 author: "Jumping Rivers"
 output:
   tufte::tufte_handout:

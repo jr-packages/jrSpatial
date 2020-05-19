@@ -1,6 +1,6 @@
 Type: Package
 Package: jrSpatial
-Title: Spatial Analysis using R
+Title: Spatial Data Analysis
 Version: 0.1.7.6
 Authors@R: 
     person(given = "Jumping",

@@ -1,6 +1,19 @@
-language: r
+language: R
+sudo: false
 cache: packages
-dist: bionic
+
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:ubuntugis/ubuntugis-unstable'
+    packages:
+      - libudunits2-dev
+      - libproj-dev
+      - libgeos-dev
+      - libgdal-dev
+      - libnetcdf-dev
+      - netcdf-bin
+      - ghostscript
 
 notifications:
   email:
@@ -19,7 +32,6 @@ before_install:
 #  - echo "options(download.file.extra = sprintf('--header \"User-Agent: R (%s)\"', paste(getRversion(), R.version['platform'], R.version['arch'], R.version['os'])))" >> ~/.Rprofile
 
   - tlmgr install fancyvrb units
-  - sudo apt-get install -y libudunits2-dev libgdal-dev libproj-dev ghostscript
 
 before_script:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/test_deploy.sh

@@ -1,5 +1,6 @@
 language: r
 cache: packages
+dist: bionic
 
 notifications:
   email:
@@ -18,7 +19,7 @@ before_install:
 #  - echo "options(download.file.extra = sprintf('--header \"User-Agent: R (%s)\"', paste(getRversion(), R.version['platform'], R.version['arch'], R.version['os'])))" >> ~/.Rprofile
 
   - tlmgr install fancyvrb units
-  - sudo apt-get install -y libudunits2-dev libgdal-dev libproj13 ghostscript
+  - sudo apt-get install -y libudunits2-dev libgdal-dev ghostscript
 
 before_script:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/test_deploy.sh

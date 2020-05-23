@@ -27,10 +27,7 @@ env:
     - ALLOWED_NOTES=1
 
 before_install:
-  - echo "options(repos = c(CRAN = 'https://packagemanager.rstudio.com/all/__linux__/bionic/latest'))" >> ~/.Rprofile.site
-  - echo "options(HTTPUserAgent = sprintf('R/%s R (%s)', getRversion(), paste(getRversion(), R.version['platform'],R.version['arch'], R.version['os'])))" >> ~/.Rprofile.site
-#  - echo "options(download.file.extra = sprintf('--header \"User-Agent: R (%s)\"', paste(getRversion(), R.version['platform'], R.version['arch'], R.version['os'])))" >> ~/.Rprofile
-
+#  - wget https://raw.githubusercontent.com/jr-packages/drat/master/options.R && cat options.R >> ~/.Rprofile.site && rm options.R
   - tlmgr install fancyvrb units
 
 before_script:

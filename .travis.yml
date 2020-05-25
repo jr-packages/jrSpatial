@@ -27,7 +27,7 @@ env:
     - ALLOWED_NOTES=1
 
 before_install:
-  - wget https://raw.githubusercontent.com/jr-packages/drat/master/options.R && cat options.R >> ~/.Rprofile.site && rm options.R
+#  - wget https://raw.githubusercontent.com/jr-packages/drat/master/options.R && cat options.R >> ~/.Rprofile.site && rm options.R
   - tlmgr install fancyvrb units
 
 before_script:

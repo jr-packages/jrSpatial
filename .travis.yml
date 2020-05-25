@@ -2,18 +2,18 @@ language: R
 sudo: false
 cache: packages
 
-# addons:
-#   apt:
-#     sources:
-#       - sourceline: 'ppa:ubuntugis/ubuntugis-unstable'
-#     packages:
-#       - libudunits2-dev
-#       - libproj-dev
-#       - libgeos-dev
-#       - libgdal-dev
-#       - libnetcdf-dev
-#       - netcdf-bin
-#       - ghostscript
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:ubuntugis/ubuntugis-unstable'
+    packages:
+      - libudunits2-dev
+      - libproj-dev
+      - libgeos-dev
+      - libgdal-dev
+      - libnetcdf-dev
+      - netcdf-bin
+      - ghostscript
 
 notifications:
   email:
@@ -29,7 +29,6 @@ env:
 before_install:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/options.R && cat options.R >> ~/.Rprofile.site && rm options.R
   - tlmgr install fancyvrb units
-  - sudo apt-get install -y libudunits2-dev libgdal-dev ghostscript
 
 before_script:
   - wget https://raw.githubusercontent.com/jr-packages/drat/master/test_deploy.sh

@@ -24,7 +24,7 @@ notifications:
 
 env:
   global:
-    - ALLOWED_NOTES=1
+    - ALLOWED_NOTES=3
 
 before_install:
 #  - wget https://raw.githubusercontent.com/jr-packages/drat/master/options.R && cat options.R >> ~/.Rprofile.site && rm options.R

@@ -1,4 +1,4 @@
 # jrNotes 0.2.2 _2020-09-22_
   * Add NEWS.md
   * Change pkg title
-  * Allowing 2 extra notes
+  * Allowing 2 extra notes (UTF-8 string note and all declared imports must be used note)

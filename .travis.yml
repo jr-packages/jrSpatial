@@ -2,6 +2,10 @@ language: R
 sudo: false
 cache: packages
 
+env:
+  global:
+    - ALLOWED_NOTES=3
+
 addons:
   apt:
     sources:

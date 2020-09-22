@@ -1,7 +1,7 @@
 Type: Package
 Package: jrSpatial
-Title: Spatial Analysis using R
-Version: 0.2.1
+Title: Jumping Rivers: Spatial Data Analysis using R
+Version: 0.2.2
 Authors@R: 
     person(given = "Jumping",
            family = "Rivers",

@@ -26,7 +26,7 @@ head(meth)
 ## ---- fig.keep="none", eval = FALSE-------------------------------------------
 #  pal_size = colorNumeric(palette = c("green", "red"),
 #                          domain = meth$pounds_seized)
-#  
+#
 #  leaflet(meth) %>%
 #    addTiles() %>%
 #    addCircles(data = meth,
@@ -68,4 +68,3 @@ head(meth)
 
 ## ---- eval= FALSE, echo = TRUE------------------------------------------------
 #  vignette("solutions5", package = "jrSpatial")
-

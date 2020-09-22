@@ -46,4 +46,3 @@ canterbury = st_transform(canterbury, 4326)
 nz = rbind(nz_missing, canterbury)
 
 tm_shape(nz) + tm_borders() + tm_fill()
-

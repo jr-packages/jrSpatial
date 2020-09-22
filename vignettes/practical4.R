@@ -49,4 +49,3 @@ tm_shape(nz) + tm_borders() + tm_fill()
 
 ## ---- eval= FALSE, echo = TRUE------------------------------------------------
 #  vignette("solutions4", package = "jrSpatial")
-

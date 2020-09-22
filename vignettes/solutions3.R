@@ -12,14 +12,14 @@ library("jrSpatial")
 
 ## ---- popdensity, echo = FALSE, fig.keep = 'none', warning = FALSE------------
 library("dplyr")
-ukgeom = 
+ukgeom =
 ukgeom  %>%
   mutate(pop_den_2017 = pop_2017 / area)
 
   # Bonus
 tm_shape(ukgeom) +
   tm_borders() +
-  tm_fill("pop_den_2017") + 
+  tm_fill("pop_den_2017") +
   tm_layout(legend.outside = TRUE)
 
 ## ---- eval = FALSE, echo = TRUE-----------------------------------------------
@@ -34,14 +34,14 @@ class(ukgeomfull)
 ukgeomfull_reverse = left_join(ukdata, ukgeom, by = c("geo" = "id"))
 class(ukgeomfull_reverse)
 # Notice this output is recognised as a data frame, but not as being an sf data frame.
-# This means that functions like tmap() will not work. 
+# This means that functions like tmap() will not work.
 
 ## ----q3-----------------------------------------------------------------------
 ukgeomfull %>%
-  filter(pop_2017 > 2500000) 
+  filter(pop_2017 > 2500000)
 
 ukgeomfull %>%
-  filter(income < 15000 | unemployment > 5) 
+  filter(income < 15000 | unemployment > 5)
 
 ## ----q6-----------------------------------------------------------------------
 ukgeomfull %>%
@@ -61,8 +61,8 @@ tm_shape(hills_uk) + tm_dots() +
   tm_shape(ukgeom) + tm_borders()
 
 ## ----Ireland NA---------------------------------------------------------------
-# There are number of Marilyns in the dataset which are located in Ireland. 
-# Ireland is not included in the ukgeom data, and therefore st_join() sets the 
+# There are number of Marilyns in the dataset which are located in Ireland.
+# Ireland is not included in the ukgeom data, and therefore st_join() sets the
 # region as NA for these hills.
 
 ## ----highest marilyn by region------------------------------------------------
@@ -79,4 +79,3 @@ hills_uk %>%
   summarise(total = n()) %>%
   arrange(desc(total)) %>%
   slice(1)
-

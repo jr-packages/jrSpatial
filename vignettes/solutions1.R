@@ -77,4 +77,3 @@ colin = st_linestring(colin_matrix)
 ## ---- echo = TRUE-------------------------------------------------------------
 hurricane = st_sf(name = c("Shary", "Colin"),
                   geometry = st_sfc(shary, colin))
-

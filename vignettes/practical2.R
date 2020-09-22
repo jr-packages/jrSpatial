@@ -15,7 +15,7 @@ tm_shape(ukgeom) +
   tm_borders()
 
 ## ---- fig.keep='none', message = FALSE----------------------------------------
-tm_shape(ukgeom) + 
+tm_shape(ukgeom) +
   tm_fill(col = "pop_2017") +
   tm_borders()
 
@@ -50,7 +50,7 @@ tm_shape(ukgeom) +
 library("dplyr")
 ukgeom = mutate(ukgeom, areapps = area / pop_2017 * 1000)
 # * 1000 to change units from km^2 to m^2
-tm_shape(ukgeom) + 
+tm_shape(ukgeom) +
   tm_layout(legend.position = c("left", "top")) +
   tm_fill("areapps",
           title = "Area per person") +
@@ -59,7 +59,7 @@ tm_shape(ukgeom) +
 ## ---- echo = TRUE, fig.keep='none'--------------------------------------------
 tm_shape(ukgeom) +
   tm_layout(legend.position = c("left", "top")) +
-  tm_fill("areapps", 
+  tm_fill("areapps",
           title = "Area per person",
           breaks = c(seq(0, 20, 4), 100)) +
   tm_borders()
@@ -68,32 +68,31 @@ tm_shape(ukgeom) +
 data("ukhills_big", package = "jrSpatial")
 
 ## ---- echo = TRUE, fig.keep='none'--------------------------------------------
-tm_shape(ukgeom) + 
-  tm_fill() + 
-  tm_borders() + 
-tm_shape(ukhills_big) + 
+tm_shape(ukgeom) +
+  tm_fill() +
+  tm_borders() +
+tm_shape(ukhills_big) +
   tm_bubbles()
 
 ## ---- fig.keep='none', warning = FALSE----------------------------------------
-tm_shape(ukgeom) + 
-  tm_fill() + 
-  tm_borders() + 
-tm_shape(ukhills_big) + 
-  tm_bubbles(col = "Metres", 
+tm_shape(ukgeom) +
+  tm_fill() +
+  tm_borders() +
+tm_shape(ukhills_big) +
+  tm_bubbles(col = "Metres",
              size = 0.5)
 
 ## ---- eval = FALSE, echo = TRUE-----------------------------------------------
 #  tmap_mode("view")
 
 ## ---- fig.keep='none', warning = FALSE----------------------------------------
-tm_shape(ukgeom) + 
-  tm_fill(id = "region") + 
-  tm_borders() + 
-tm_shape(ukhills_big) + 
-  tm_bubbles(col = "Metres", 
-             size = 0.1, 
-             id = "Mountain") 
+tm_shape(ukgeom) +
+  tm_fill(id = "region") +
+  tm_borders() +
+tm_shape(ukhills_big) +
+  tm_bubbles(col = "Metres",
+             size = 0.1,
+             id = "Mountain")
 
 ## ---- eval= FALSE, echo = TRUE------------------------------------------------
 #  vignette("solutions2", package = "jrSpatial")
-

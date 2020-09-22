@@ -26,7 +26,7 @@ head(meth)
 ## ---- fig.keep="none", eval = FALSE-------------------------------------------
 #  pal_size = colorNumeric(palette = c("green", "red"),
 #                          domain = meth$pounds_seized)
-#  
+#
 #  leaflet(meth) %>%
 #    addTiles() %>%
 #    addCircles(data = meth,
@@ -65,4 +65,3 @@ head(meth)
 #    addLegend(title = "Pounds seized",
 #              pal = pal_size_bin,
 #              values = ~pounds_seized)
-

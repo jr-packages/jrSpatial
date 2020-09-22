@@ -80,4 +80,3 @@ hurricane = st_sf(name = c("Shary", "Colin"),
 
 ## ---- eval= FALSE, echo = TRUE------------------------------------------------
 #  vignette("solutions1", package = "jrSpatial")
-
